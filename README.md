@@ -1,1 +1,3 @@
-# turbo-spoon
+# Validation
+
+- setting validation through regexps
