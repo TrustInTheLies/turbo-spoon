@@ -35,7 +35,7 @@
                 name="name"
                 minlength="2"
                 maxlength="20"
-                pattern="(^[А-Я][а-яё]+)[\s-]*([А-Я][а-яё]+)?"
+                pattern="^[А-Я][а-я]*(?:-[А-Я][а-я]*)?$"
                 placeholder="Имя"
                 required
               />
@@ -45,7 +45,7 @@
                 class="form__input"
                 type="email"
                 name="email"
-                pattern="^[a-zA-Z0-9]+[-_\.]*[a-zA-Z0-9]+@[a-zA-Z]+\.[a-zA-Z]{2,8}"
+                pattern="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$"
                 placeholder="E-Mail"
                 required
               />
@@ -60,8 +60,6 @@
                 name="tel"
                 placeholder="Телефон"
                 pattern="(?:^\+?[78][\s\-]?\(?\d{3}\)?[\s\-]?\d{2,3}[\s\-]?\d{2,3}[\s\-]?\d{2,3})"
-                minlength="18"
-                maxlength="18"
                 required
               />
               <span class="form__error"
