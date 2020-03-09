@@ -35,7 +35,7 @@
                 name="name"
                 minlength="2"
                 maxlength="20"
-                pattern="^[А-Я][а-я]*(?:-[А-Я][а-я]*)?$"
+                pattern="^[А-Я][а-я]{1,}(?:-[А-Я][а-я]{1,})?$"
                 placeholder="Имя"
                 required
               />
@@ -43,7 +43,7 @@
             <div class="form__field">
               <input
                 class="form__input"
-                type="email"
+                type="text"
                 name="email"
                 pattern="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$"
                 placeholder="E-Mail"
